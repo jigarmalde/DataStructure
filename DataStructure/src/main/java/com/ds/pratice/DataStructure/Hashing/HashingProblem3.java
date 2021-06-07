@@ -10,7 +10,7 @@ public class HashingProblem3 {
         hashingProblem3(array);
     }
 
-    // find longest subarray from the given array
+    // find longest subarray from the given array  or longest chain of consecutives element
     public static void hashingProblem3(List<Integer> array){
         int count = 0;
         int max = 0;
