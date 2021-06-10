@@ -9,7 +9,7 @@ public class HashingProblem4 {
 
     public static void main(String args[])
     {
-        List<Integer> array = Arrays.asList(1, 5, 6, 0, 3);
+        List<Integer> array = Arrays.asList(1, 5, 6, 0, -6, 3);
         hashingProblem4(array);
     }
     // find length of largest subarray with sum 0
