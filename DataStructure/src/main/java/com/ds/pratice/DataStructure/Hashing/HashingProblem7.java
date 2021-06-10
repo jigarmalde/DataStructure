@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HashingProbelm7 {
+public class HashingProblem7 {
 
     public static void main(String args[])
     {
         List<Integer> array = Arrays.asList(0, 0, 1, 0, 1, 0, 1);
-        HashingProbelm7 hashingProblem67 = new HashingProbelm7();
+        HashingProblem7 hashingProblem67 = new HashingProblem7();
         hashingProblem67.hashingProblem7(array);
     }
 
