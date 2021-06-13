@@ -10,14 +10,14 @@ public class HashingProblem8 {
     public static void main(String args[])
     {
         List<Integer> array = Arrays.asList(1, 0, 0, 1, 0, 1);
-        HashingProblem8 hashingProblem7 = new HashingProblem8();
-        hashingProblem7.hashingProblem7(array);
+        HashingProblem8 hashingProblem8 = new HashingProblem8();
+        hashingProblem8.hashingProblem8(array);
 
 
     }
 
     //Count subarrays with equal number of 1’s and 0’s
-    public void hashingProblem7(List<Integer> array){
+    public void hashingProblem8(List<Integer> array){
 
         {
             int count=0;
