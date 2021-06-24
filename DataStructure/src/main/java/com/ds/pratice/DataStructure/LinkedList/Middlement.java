@@ -73,9 +73,10 @@ class Middlement {
         for(int i = 5; i > 0; i--)
         {
             ll.push(head, i);
-            ll.printList(head);
-            ll.printMiddle(head);
+           // ll.printList(head);
+
         }
+        ll.printMiddle(head);
     }
 }
 
