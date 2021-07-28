@@ -15,7 +15,8 @@ public class ReverseLinkedList {
     private void print(){
         Node node =head;
         while (node != null){
-            System.out.println(node.data);
+            System.out.print(node.data+" ");
+
             node = node.next;
         }
     }
@@ -31,6 +32,22 @@ public class ReverseLinkedList {
     }
 
     private void reverseLinkedList(){
+        Node prev =null;
+        Node current = head;
+        Node next = null;
+        while (current != null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head =prev;
+
+        Node display =head;
+        while (display != null){
+            System.out.print(display.data + " ");
+            display = display.next;
+        }
         
     }
 
@@ -42,6 +59,11 @@ public class ReverseLinkedList {
         linkedList.addNodeToHead(40);
         linkedList.addNodeToHead(50);
         System.out.println("Printing Linked list");
+        linkedList.print();
+        System.out.println();
+        System.out.println("reverse Linked list");
+        linkedList.reverseLinkedList();
+
     }
 
 }
