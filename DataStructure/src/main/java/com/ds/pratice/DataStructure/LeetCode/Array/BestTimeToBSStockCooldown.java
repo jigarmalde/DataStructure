@@ -3,7 +3,6 @@ package com.ds.pratice.DataStructure.LeetCode.Array;
 public class BestTimeToBSStockCooldown {
     public static void main(String[] args){
         int[] nums = new int[]{1,2,3,0,2};
-
         System.out.println(maxProfit(nums));
     }
 
