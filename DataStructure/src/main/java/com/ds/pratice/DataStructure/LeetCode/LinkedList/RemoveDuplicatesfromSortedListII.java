@@ -24,42 +24,42 @@ public class RemoveDuplicatesfromSortedListII {
 
     private static Node remoceDuplicate(Node head){
 
-        Node node = new Node(0);
-        Node temp = node;
-        Node prev = node;
-        temp.next = head;
-        prev.next = head;
-        if(head == null)
-            return head;
+        Node dummy = new Node(0);
 
-        while (head != null && head.next != null){
+        // Dummy node points to the original head
+        dummy.next = head;
+        Node prev = dummy;
+        Node current = head;
 
-            if(head.data != head.next.data){
-                prev =head;
-                head = head.next;
-            }else {
-                while ( (head != null && head.next != null) && (head.data == head.next.data)){
-                    head= head.next;
-                }
-                prev.next = head.next;
-            }
+        while (current != null) {
 
+            while (current.next != null &&
+                    prev.next.data == current.next.data)
+                current = current.next;
 
+            if (prev.next == current)
+                prev = prev.next;
+
+            else
+                prev.next = current.next;
+
+            current = current.next;
         }
-        return temp.next;
+        return dummy.next;
 
     }
 
     public static void main(String[] agrs) {
         RemoveDuplicatesfromSortedListII list = new RemoveDuplicatesfromSortedListII();;
         list.head1 = new Node(1);
-        list.head1.next = new Node(2);
-        list.head1.next.next = new Node(2);
-        list.head1.next.next.next = new Node(4);
+        list.head1.next = new Node(1);
+        list.head1.next.next = new Node(1);
+        list.head1.next.next.next = new Node(3);
+        list.head1.next.next.next.next = new Node(4);
         //list.head1.next.next.next.next = new Node(4);
-        //list.head1.next.next.next.next.next = new Node(5);
-       // list.head1.next.next.next.next.next.next = new Node(5);
-        //list.head1.next.next.next.next.next.next.next = new Node(5);
+        //list.head1.next.next.next.next.next = new Node(4);
+        //list.head1.next.next.next.next.next.next = new Node(5);
+       // list.head1.next.next.next.next.next.next.next = new Node(5);
         //list.head1.next.next = new Node(7);
 
         Node node = remoceDuplicate(list.head1);

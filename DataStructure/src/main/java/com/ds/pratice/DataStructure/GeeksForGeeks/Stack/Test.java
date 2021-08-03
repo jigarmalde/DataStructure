@@ -1,38 +1,27 @@
 package com.ds.pratice.DataStructure.GeeksForGeeks.Stack;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 class Test {
-    // Pushing element on the top of the stack
-    static void stack_push(Stack<Integer> stack) {
-        for (int i = 0; i < 5; i++) {
-            stack.push(i);
-        }
+    public static int[] removeElements(int[] arr, int key)
+    {
+        // Move all other elements to beginning
+        int index = 0;
+        for (int i=0; i<arr.length; i++)
+            if (arr[i] != key)
+                arr[index++] = arr[i];
+
+        // Create a copy of arr[]
+        return Arrays.copyOf(arr, index);
     }
 
-    // Popping element from the top of the stack
-    static void stack_pop(Stack<Integer> stack) {
-        System.out.println("Pop Operation:");
-
-        for (int i = 0; i < 5; i++) {
-            Integer y = (Integer) stack.pop();
-            System.out.println(y);
-        }
-    }
-
-    // Displaying element on the top of the stack
-    static void stack_peek(Stack<Integer> stack) {
-        Integer element = (Integer) stack.peek();
-        System.out.println("Element on stack top: " + element);
-    }
-
-    // Searching element in the stack
-    static void stack_search(Stack<Integer> stack, int element) {
-        Integer pos = (Integer) stack.search(element);
-
-        if (pos == -1)
-            System.out.println("Element not found");
-        else
-            System.out.println("Element is found at position: " + pos);
+    // Driver code
+    public static void main(String[] args)
+    {
+        int[] array = { 3, 9, 2, 3, 1, 7, 2, 3, 5 };
+        int key = 3;
+        array = removeElements(array, key);
+        System.out.println(Arrays.toString(array));
     }
 }
