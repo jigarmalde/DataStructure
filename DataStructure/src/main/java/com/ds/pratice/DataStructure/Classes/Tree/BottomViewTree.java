@@ -5,12 +5,12 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.TreeMap;
 
-public class BottomView {
+public class BottomViewTree {
     BinaryNode root;
     Map<Integer, Integer> map =new TreeMap<>();
 
     public static void main(String[] args) {
-        BottomView tree = new BottomView();
+        BottomViewTree tree = new BottomViewTree();
         tree.root = new BinaryNode(10);
         tree.root.leftNode = new BinaryNode(20);
         tree.root.rightNode = new BinaryNode(30);
