@@ -74,7 +74,7 @@ public class AddTwoNumbers {
         addTwoNumbers.head2 = new Node(5);
         addTwoNumbers.head2.next = new Node(6);
         addTwoNumbers.head2.next.next = new Node(4);
-        addTwoNumbers.head2.next.next.next = new Node(4);
+       // addTwoNumbers.head2.next.next.next = new Node(4);
 
         /*Node temp2 = reverseLinkedList(addTwoNumbers.head2);
 

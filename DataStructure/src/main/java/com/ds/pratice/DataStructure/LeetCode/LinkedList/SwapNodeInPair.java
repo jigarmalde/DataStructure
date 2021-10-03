@@ -49,4 +49,21 @@ public class SwapNodeInPair {
 
 
     }
+
+
+    // without recurssion
+    public Node swapPairs(Node head) {
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node current = dummy;
+        while (current.next != null && current.next.next != null) {
+            Node first = current.next;
+            Node second = current.next.next;
+            first.next = second.next;
+            current.next = second;
+            current.next.next = first;
+            current = current.next.next;
+        }
+        return dummy.next;
+    }
 }
