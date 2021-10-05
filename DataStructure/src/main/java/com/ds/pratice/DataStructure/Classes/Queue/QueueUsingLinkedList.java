@@ -4,6 +4,7 @@ package com.ds.pratice.DataStructure.Classes.Queue;
 public class QueueUsingLinkedList {
    Node rear;
    Node front;
+   int currentsize=0;
 
     class Node{
         int data;
@@ -23,6 +24,7 @@ public class QueueUsingLinkedList {
             rear.next = temp;
             rear = temp;
         }
+        currentsize++;
 
 
     }
@@ -32,6 +34,7 @@ public class QueueUsingLinkedList {
             int temp = front.data;
 
             front = front.next;
+            currentsize--;
             return temp;
         }
         return -1;
@@ -46,10 +49,8 @@ public class QueueUsingLinkedList {
 
 
     public boolean isEmpty(){
-        if(rear.data < 0){
-            return true;
-        }
-        return false;
+
+        return (currentsize ==0);
     }
 
 
@@ -59,10 +60,10 @@ public class QueueUsingLinkedList {
         queueUsingLinkedList.push(20);
         queueUsingLinkedList.push(30);
         queueUsingLinkedList.push(40);
-        System.out.println(queueUsingLinkedList.peek());
         System.out.println(queueUsingLinkedList.pop());
         System.out.println(queueUsingLinkedList.pop());
-        System.out.println(queueUsingLinkedList.peek());
+        System.out.println(queueUsingLinkedList.pop());
+        System.out.println(queueUsingLinkedList.pop());
         System.out.println(queueUsingLinkedList.isEmpty());
     }
 }
