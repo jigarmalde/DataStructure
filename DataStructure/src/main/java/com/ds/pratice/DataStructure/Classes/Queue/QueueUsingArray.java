@@ -16,7 +16,7 @@ public class QueueUsingArray {
 
 
     public boolean isEmpty(){
-        if(rear < 0){
+        if(front > rear){
             return true;
         }
         return false;
@@ -35,8 +35,8 @@ public class QueueUsingArray {
         queueUsingArray.enQueue(40);
         System.out.println(queueUsingArray.deQueue());
         System.out.println(queueUsingArray.deQueue());
-        System.out.println(queueUsingArray.peek());
-        System.out.println(queueUsingArray.peek());
+        System.out.println(queueUsingArray.deQueue());
+        //System.out.println(queueUsingArray.deQueue());
         System.out.println(queueUsingArray.isEmpty());
     }
 }
