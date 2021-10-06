@@ -26,6 +26,10 @@ public class StackUsingTwoQueue {
         return q1.remove();
     }
 
+    public boolean isEmpty(){
+        return q1.isEmpty();
+    }
+
     public static void main(String [] args){
         StackUsingTwoQueue stackUsingTwoQueue = new StackUsingTwoQueue();
         stackUsingTwoQueue.push(10);
