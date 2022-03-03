@@ -42,7 +42,7 @@ public class CircularQueueUsingArray {
         queueUsingArray.enQueue(20);
         queueUsingArray.enQueue(30);
         queueUsingArray.enQueue(40);
-        //queueUsingArray.enQueue(50);
+        queueUsingArray.enQueue(50);
         //queueUsingArray.enQueue(50);
         System.out.println(queueUsingArray.deQueue());
         System.out.println(queueUsingArray.deQueue());

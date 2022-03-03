@@ -3,7 +3,7 @@ package com.ds.pratice.DataStructure.Classes.Tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinaryTree {
+public class BinaryTreeDemo {
 
     BinaryNode root;
     Queue<BinaryNode> binaryNodes = new LinkedList<>();
@@ -50,7 +50,7 @@ public class BinaryTree {
 
     }
     public static void main(String[] args) {
-        BinaryTree binaryTree = new BinaryTree();
+        BinaryTreeDemo binaryTree = new BinaryTreeDemo();
         binaryTree.insert(10);
         binaryTree.insert(20);
         binaryTree.insert(30);

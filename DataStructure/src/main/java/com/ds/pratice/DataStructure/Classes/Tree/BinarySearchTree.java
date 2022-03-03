@@ -40,7 +40,8 @@ public class BinarySearchTree {
     }
 
     public  void add(int data){
-        root = insertrec(root, data);
+        //root = insertrec(root, data);
+        insert(data);
     }
 
     public static void main(String[] args) {

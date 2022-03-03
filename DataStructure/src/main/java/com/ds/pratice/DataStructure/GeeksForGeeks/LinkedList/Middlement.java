@@ -70,7 +70,7 @@ class Middlement {
     {
         Middlement ll = new Middlement();
 
-        for(int i = 5; i > 0; i--)
+        for(int i = 7; i > 0; i--)
         {
             ll.push(head, i);
            // ll.printList(head);

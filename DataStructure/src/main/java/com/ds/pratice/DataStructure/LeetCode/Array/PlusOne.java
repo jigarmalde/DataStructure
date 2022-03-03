@@ -8,7 +8,7 @@ import java.util.List;
 public class PlusOne {
 
     public static void main(String[] args){
-        int[] nums = new int[]{9,9,9};
+        int[] nums = new int[]{1,9,9,9};
 
         System.out.println(Arrays.toString(plusOne(nums)));
     }

@@ -20,7 +20,7 @@ public class LeftViewTree {
         tree.root.rightNode.leftNode.rightNode = new BinaryNode(101);
         tree.root.rightNode.leftNode.rightNode.rightNode = new BinaryNode(102);
         //tree.rightViewTree(tree.root);
-        tree.printLeftView(tree.root);
+        tree.leftView(tree.root);
     }
 
     public void printLeftView(BinaryNode root, int level, Map<Integer, Integer> map)

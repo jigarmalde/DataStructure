@@ -9,7 +9,7 @@ public class HashingProblem6 {
 
     public static void main(String args[])
     {
-        List<Integer> array = Arrays.asList(0, 1);
+        List<Integer> array = Arrays.asList(0, 1,1,0,0);
         HashingProblem6 hashingProblem6 = new HashingProblem6();
         hashingProblem6.hashingProblem6(array);
 
